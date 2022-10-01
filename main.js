@@ -17,10 +17,10 @@ for (let i = 0; i < times.length; i++) {
     let timetext=""
     if(present > -1)timetext=storage[present].text
     let block = document.createElement("div")
-    block.innerHTML = `<span>${times[i]}${(times[i] > 0 && times[i] < 6) || times[i] === 12 ? "pm" : "am"}</span>
+    block.innerHTML = `<span class="hour">${times[i]}${(times[i] > 0 && times[i] < 6) || times[i] === 12 ? "pm" : "am"}</span>
     <textarea class="${timeclass}">${timetext}</textarea>
     <button type="button" class="saveBtn"><i class="far fa-save"></i></button>`
-    block.classList.add("time-block")
+    block.classList.add("time-block", "row")
     blockcontainer.append(block)
     let savebutton = block.querySelector("button")
     savebutton.addEventListener("click", () => {
