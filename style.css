@@ -5,6 +5,7 @@ body {
 }
 
 textarea {
+  flex: 1;
   background: transparent;
   border: none;
   resize: none;
@@ -31,6 +32,8 @@ textarea {
 }
 
 .row {
+  display: flex;
+  width: 100%;
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -38,6 +41,8 @@ textarea {
 
 .hour {
   background-color: #ffffff;
+  width: 55px;
+  padding-top: 10px;
   color: #000000;
   border-top: 1px dashed #000000;
 }
